@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="/images/header/favicon.ico" />
+  </head>
+  <body>
+    <p id="skipNav"><a href="#content">본문바로가기</a></p>
+    <div id="wrap">
+      <header id="header">
+        <div class="inner">
+          <p>
+            <a href="index.html"><img src="/images/logoW.png" /></a>
+          </p>
+          <nav class="nav">
+            <ul class="gnb">
+              <li>
+                <a href="sub1.html">객실소개</a>
+                <ul class="sub_gnb">
+                  <li><a href="./sub1.html">DBTR</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">프로모션</a>
+                <ul class="sub_gnb">
+                  <li><a href="#">-</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">부대시설</a>
+                <ul class="sub_gnb">
+                  <li><a href="#">-</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">예약하기</a>
+                <ul class="sub_gnb">
+                  <li><a href="#">-</a></li>
+                </ul>
+              </li>
+              <li><a href="#">호텔소식</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- //header -->
+
+      <section id="visual">
+        <!-- Swiper -->
+
+        <div class="swiper mainVisual">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/main/visual01.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/main/visual02.jpg" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/main/visual03.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- //visual -->
+
+      <main id="container" class="main">
+        <section id="content">
+          <div class="con-box con1">
+            <div class="inner">
+              <a href=""><h3>SEARCH</h3></a>
+              <span class="reservation"
+                >RESERVATION
+                <p>ROOM</p>
+              </span>
+              <span class="checkIn"
+                >CHECK IN / OUT
+                <form>
+                  <label for="date" style="font-size: 20px">날짜를 선택해주세요.</label>
+                  <input type="date" id="date" name="date" /></form
+              ></span>
+              <span class="room"
+                >ROOM
+                <form>
+                  <input type="number" min="1" max="3" id="room" name="room" value="0" /></form
+              ></span>
+              <span class="adult">ADULT <input type="number" value="0" min="0" max="3" id="room" name="adult" /></span>
+              <span class="children"
+                >CHILDREN <input type="number" value="0" min="0" max="3" id="room" name="children"
+              /></span>
+            </div>
+          </div>
+          <!-- //con1 -->
+          <div class="con-box con2">
+            <div class="inner">
+              <div class="con2Icon">
+                <span><img src="/images/main/icon/con2_01.png" alt="" />Finest<br />Dining</span>
+                <span
+                  ><img src="/images/main/icon/con2_02.png" alt="" />Free<br />
+                  WiFi</span
+                >
+                <span><img src="/images/main/icon/con2_03.png" alt="" />Transportation<br />Hub</span>
+                <span><img src="/images/main/icon/con2_04.png" alt="" />Swimming<br />Facilities</span>
+                <span><img src="/images/main/icon/con2_05.png" alt="" />Healing<br />Spa</span>
+                <span
+                  ><p>
+                    몸과 마음, 정신의 치유를 통해<br /><em>새로운 에너지</em>를 불어넣을 수 있는<br />건강한 휴식과
+                    재충전을 누려보세요.
+                  </p></span
+                >
+              </div>
+              <div class="con2Txt">
+                <h2>
+                  Welcome to<br />JW Marriott Hotel Seoul.<br />Enjoy the dignity of<br />luxury hotel<br />in Seoul
+                </h2>
+
+                <span>
+                  유명 관광지와 가까운 강남 소재 JW 메리어트 호텔 서울은<br />5성급 호텔 경험을 제공하는 특급
+                  호텔입니다.<br />활기 넘치는 서울 강남에서 호캉스를 계획하신다면,<br />JW 메리어트 호텔 서울에서
+                  기억에 남는 경험을 만들어 보세요.
+
+                  <p>서울 5성급 특급 호텔에 걸맞은 품격을 누려보세요 82.2.6282.6262</p></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- //con2 -->
+          <div class="con-box con3">
+            <div class="inner">
+              <div class="swiper con3Swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="/images/main/con3_1.jpg" alt="" />
+                    <div class="proTxt">
+                      <h4>마인드, 바디 앤 웰니스 패키지</h4>
+                      <h3>Mind, body and<br />Wellness Package</h3>
+                      <h5>프로모션 & 패키지</h5>
+                      <p>
+                        객실에서 즐기는 요가와 마르퀴스 피트니스 클럽에서의 다양한 액티비티로 몸과 마음에 활력을
+                        선사하는 힐링 호캉스를 경험해보세요.
+                      </p>
+                      <p>2023년 12월 1일 — 2024년 6월 30일</p>
+                      <a href="#" class="more">자세히보기</a>
+                    </div>
+                    <span class="proColor"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/main/con3_2.jpg" alt="" />
+                    <div class="proTxt">
+                      <h4>스프링 블리스 피크닉 패키지</h4>
+                      <h3>Spring Bliss <br />Picnic Package</h3>
+                      <h5>프로모션 & 패키지</h5>
+                      <p>공원에서 피크닉을, 객실에서는 편안한 휴식을 즐기며 싱그러운 봄을 만끽해 보세요.</p>
+                      <p>2024년 3월 22일 - 2024년 6월 30일</p>
+                      <a href="#" class="more">자세히보기</a>
+                    </div>
+                    <span class="proColor"></span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="/images/main/con3_3.jpg" alt="" />
+                    <div class="proTxt">
+                      <h4>헬로키티 앳 JW</h4>
+                      <h3>Hello Kitty at JW</h3>
+                      <h5>프로모션 & 패키지</h5>
+                      <p>
+                        럭셔리 호텔과 헬로키티의 특별한 만남. 귀여운 헬로키티와 함께하는 호텔에서의 순간을 즐겨보세요.
+                      </p>
+                      <p>2023년 12월 1일 - 2024년 5월 26일</p>
+                      <a href="#" class="more">자세히보기</a>
+                    </div>
+                    <span class="proColor"></span>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <!-- //con3 -->
+          <div class="con-box con4">
+            <div class="Txt">
+              <h3>JW 메리어트 호텔 서울 객실 둘러보기</h3>
+              <p>
+                넓은 침실과 욕실, 객실 창가에 놓인 아늑한 소파를 갖춘 객실은 온전한 휴식과 숙면을 만끽하는 데 최적인
+                분위기를 조성할 수 있도록 설계되어 있으며, 네스프레소 머신과 시그니처 어메니티, 고급 침구를 제공합니다.
+                아울러, 마르퀴스 피트니스 클럽(실내 수영장 포함)과 와이파이를 무료로 이용하실 수 있습니다.
+              </p>
+              <a href="#" class="more">자세히보기</a>
+            </div>
+            <div class="swiper con4Swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/images/main/con4_1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/main/con4_2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/main/con4_3.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <!-- //con4 -->
+          <div class="con-box con5">
+            <div class="inner">
+              <h2>고급 다이닝 레스토랑</h2>
+              <p>
+                세계에서 내로라하는 셰프들의 독창적인 요리와 최고의 서비스.<br />
+                JW 메리어트 호텔 서울에서 그간 경험하지 못했던 미식의 향연이 펼쳐집니다.
+              </p>
+              <ul class="con5Txt">
+                <li>
+                  <a href="#">
+                    <div>
+                      <p>FLAVORS</p>
+                      <p>
+                        이색적인 서울 뷔페 레스토랑, 플레이버즈(Flavors)에서 잊지 못할 미식 여행을 떠나보세요. 마스터
+                        셰프가 라이브 스테이션에서 전 세계의 다양한 요리를 주문 즉시 요리해 드립니다.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <p>TAMAYURA</p>
+                      <p>
+                        서울 정통 일식당 타마유라(Tamayura)에서는 일본 전통 코스 식사인 가이세키를 경험하실 수 있습니다.
+                        프리미엄 일본 차와 함께 에도마에 스시, 카운터에서 바로 만들어 드리는 서양식 데판야키를
+                        즐겨보세요.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <p>THE MARGAUX GRILL</p>
+                      <p>
+                        아름다운 야외 정원에 둘러싸여 매력적인 서울 강남 레스토랑, 더 마고 그릴(The Margaux Grill)은
+                        일상에 영감을 주는 파인다이닝 공간입니다. 다양하고 진귀한 고급 와인을 음미하며 신선한 시푸드와
+                        완벽하게 조리한 프리미엄 비프 스테이크의 풍미를 즐겨보세요.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div>
+                      <p>PATISSERIE</p>
+                      <p>
+                        강남구에서 바쁜 하루를 시작하시나요? 파티세리(Patisserie)에서 든든하게 끼니를 챙겨보세요. 델리
+                        스타일의 호텔 레스토랑으로, 섬세한 페이스트리와 케이크, 디저트, 커피, 티를 제공합니다.
+                        테이크아웃 가능합니다.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- //con5 -->
+          <div class="con-box con6">
+            <div class="inner">
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15815.438988547514!2d127.00476861301306!3d37.503987022958924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca27e17187d4d%3A0x3c4f66c88b7f6ce9!2sJW%20Marriott%20Hotel%20Seoul!5e0!3m2!1sen!2sus!4v1643055168953!5m2!1sen!2sus"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+              <div class="img"></div>
+              <div class="txt1">
+                <p>A GUIDE TO YOUR WAY</p>
+                <h2>
+                  FROM THE<br />
+                  WORLD TO SEOUL<br />
+                  MARRIOTT IN SEOUL
+                </h2>
+                <div>
+                  <span>오시는 길 안내</span>
+                  <p><i class="xi-subway"></i><a href="#">Express Bus Terminal Station</a></p>
+                  <p><i class="xi-airplane"></i><a href="#">Gimpo International Airport</a></p>
+                  <p><i class="xi-airplane"></i><a href="#">Incheon International Airport</a></p>
+                </div>
+              </div>
+              <div class="txt2">
+                <span><i class="xi-maker"></i></span>
+                <p>JW 메리어트 호텔 서울<br />서초구 신반포로 176, 서울, 대한민국, 06546</p>
+                <span><i class="xi-call"></i></span>
+                <p>+82 2-62826262</p>
+              </div>
+            </div>
+          </div>
+          <!-- //con6 -->
+        </section>
+      </main>
+      <!-- //main -->
+
+      <footer id="footer">
+        <footer id="footer">
+          <div class="left">
+            <div class="inner">
+              <div>
+                <ul class="info1">
+                  <li>
+                    <div class="info1Title"><span>Top Destinations</span><i class="xi-angle-down-min"></i></div>
+                    <div class="info1Desc">
+                      <a href="">New York Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Paris Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Boston Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">San Diego Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">London Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Chicago Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">San Francisco Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Nashville Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Washington DC Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">New Orleans Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Orlando Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Las Vegas Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Denver Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Los Angeles Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Miami Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Toronto Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Miami Beach Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Phoenix Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Sedona Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Santa Barbara Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Charleston Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Island of Hawaii Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Bahamas Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Destin Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Puerto Rico Hotels <i class="xi-angle-right-min"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info1Title"><span>For Guests</span><i class="xi-angle-down-min"></i></div>
+                    <div class="info1Desc">
+                      <a href="">Best Rate Guarantee <i class="xi-angle-right-min"></i></a>
+                      <a href="">Marriott Bonvoy Moments <i class="xi-angle-right-min"></i></a>
+                      <a href="">Activities <i class="xi-angle-right-min"></i></a>
+                      <a href="">Marriott Insiders <i class="xi-angle-right-min"></i></a>
+                      <a href="">Marriott Bonvoy Traveler <i class="xi-angle-right-min"></i></a>
+                      <a href="">Travel Experiences <i class="xi-angle-right-min"></i></a>
+                      <a href="">Travel Insurance <i class="xi-angle-right-min"></i></a>
+                      <a href="">Shop Marriott <i class="xi-angle-right-min"></i></a>
+                      <a href="">Shop Westin <i class="xi-angle-right-min"></i></a>
+                      <a href="">Gift Cards <i class="xi-angle-right-min"></i></a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info1Title"><span> Our Company</span><i class="xi-angle-down-min"></i></div>
+                    <div class="info1Desc">
+                      <a href="">About Marriott <i class="xi-angle-right-min"></i></a>
+                      <a href="">Careers <i class="xi-angle-right-min"></i></a>
+                      <a href="">Travel Professionals <i class="xi-angle-right-min"></i></a>
+                      <a href="">Group Partners <i class="xi-angle-right-min"></i></a>
+                      <a href="">Developers <i class="xi-angle-right-min"></i></a>
+                      <a href="">Affiliates <i class="xi-angle-right-min"></i></a>
+                      <a href="">Investors <i class="xi-angle-right-min"></i></a>
+                      <a href="">News <i class="xi-angle-right-min"></i></a>
+                      <a href="">Bill Marriott's Blog <i class="xi-angle-right-min"></i></a>
+                      <a href="">New Orleans Hotels <i class="xi-angle-right-min"></i></a>
+                      <a href="">Tony Capuano’s Blog <i class="xi-angle-right-min"></i></a>
+                      <a href="">Heart of the House <i class="xi-angle-right-min"></i></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="title">호텔 세부정보</p>
+                <ul class="info2">
+                  <li>
+                    <div class="info2Title"><span>부대시설</span><i class="xi-angle-down-min"></i></div>
+                    <div class="info2Desc">
+                      <a href="">레스토랑 <i class="xi-angle-right-min"></i></a>
+                      <a href="">스파 <i class="xi-angle-right-min"></i></a>
+                      <a href="">피트니스 센터 <i class="xi-angle-right-min"></i></a>
+                      <a href="">실내 수영장 <i class="xi-angle-right-min"></i></a>
+                      <a href="">온수 욕조 <i class="xi-angle-right-min"></i></a>
+                      <p>
+                        24시간 룸서비스<br />
+                        매일 하우스키핑<br />
+                        턴다운(객실 정돈) 서비스
+                      </p>
+                      <a href="">미팅룸 <i class="xi-angle-right-min"></i></a>
+                      <p>
+                        드라이클리닝 서비스<br />
+                        세탁<br />
+                        룸 서비스<br />
+                        모닝콜<br />
+                        무료 와이파이
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info2Title"><span>호텔 정보</span><i class="xi-angle-down-min"></i></div>
+                    <div class="info2Desc">
+                      <p>체크인: 오후3:00 체크아웃: 오후12:00 체크인 가능한 최소 연령: 19 금연 호텔</p>
+                      <p><span>반려동물 정책</span>반려동물 동반 불가 No pets permitted except for service animals</p>
+                      <p><span>주차</span> 호텔 내 무료 주차</p>
+                      <p>
+                        <span>주차 관련 추가 정보</span>발레파킹 서비스 요금으로 최초 3시간은 30,000원이며 그 이후는
+                        시간당 6,000원입니다.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info2Title"><span>일반 정보</span><i class="xi-angle-down-min"></i></div>
+                    <div class="info2Desc">
+                      <p><span>정책 및 결제 관련 사항</span>결제 수단: 애플 페이, 신용카드, 현금</p>
+                      <p>
+                        <span>서비스</span>시설 내 엘리베이터 운영<br />
+                        컨시어지 데스크 서비스<br />환전<br />직원이 사용하는 언어: 한국어, 영어, 일본어, 중국어
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info2Title"><span>장애인 접근성 정보</span><i class="xi-angle-down-min"></i></div>
+                    <div class="info2Desc">
+                      <p>
+                        <span>+82 2-62826262</span>
+                        장애인 고객용 객실 시설이나 공용 공간, 장애와 관련된 특별 서비스에 관한 자세한 정보는 전화로
+                        문의하시기 바랍니다.
+                      </p>
+                      <p>
+                        <span>장애인 고객이 이용 가능한 호텔 특징</span>맹인 안내견 동반 환영<br />시설 내 엘리베이터
+                        운영<br />호텔 내 장애인 전용 밴 주차장<br />호텔 내 장애인 전용 주차장
+                      </p>
+                      <p>
+                        <span>정문에서부터 접근 가능한 경로가 있는 장소</span>실내 통로로 객실 및 스위트 출입 가능<br />정문
+                        입구로 출입 가능<br />호텔 내 레스토랑 입구로 출입 가능<br />호텔 내 미팅룸 입구로 출입 가능<br />호텔
+                        내 비즈니스 센터 입구로 출입 가능<br />
+                        호텔 내 스파 입구로 출입 가능
+                      </p>
+                      <p>
+                        <span>장애인 고객 객실</span>객실 내 이동식 샤워시설<br />객실 문에 낮게 설치된 뷰포트<br />객실
+                        문에 설치된 레버 손잡이<br />
+                        객실 문에 설치된 안전 체인 또는 안전고리<br />객실 및 스위트 문에 설치된 데드볼트<br />객실 및
+                        스위트 문에 설치된 뷰포트<br />
+                        객실 및 스위트 문에 설치된 자동 잠금 장치<br />낮게 설치된 콘센트<br />높이 조절식 손잡이형
+                        샤워봉<br />욕실 내 미끄럼 방지 손잡이 레일<br />욕조 손잡이 레일<br />장애인 고객용 객실<br />장애인
+                        고객용 세면대<br />장애인 고객용 휠체어 높이의 변기<br />장애인용 샤워실<br />전자 객실 키
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bottom">
+                <span class="follow">
+                  <p>Follow us</p>
+                  <a href="#"><i class="xi-facebook-official"></i></a>
+                  <a href="#"><i class="xi-instagram"></i></a>
+                  <a href="#"><i class="xi-twitter"></i></a>
+                  <a href="#"><i class="xi-linkedin-square"></i></a>
+                  <a href="#"><i class="xi-youtube-play"></i></a>
+                </span>
+                <span class="copy">
+                  <p>© 2024 Redesign by Choi YeongJu Marriott Proprietary Information.</p>
+                  <p>Korean</p></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <p>JW MARRIOTT® HOTEL SEOUL</p>
+              <p>
+                서초구 신반포로 176, 서울, 대한민국, 06546<br />
+                팩스: +82 2-62826263<br />전화: +82 2-62826262
+              </p>
+
+              <a class="bonvoy" href="#">
+                <em><img src="/images/main/icon/bonvoyLogo.png" alt="" /></em>
+                <i class="xi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </footer>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
