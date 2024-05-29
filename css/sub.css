@@ -1,0 +1,632 @@
+/* 전체페이지공통 */
+#wrap {
+  width: 100%;
+  min-width: 1920px;
+}
+#header,
+#subheader,
+#visual,
+#subVisual,
+#container,
+#content,
+#footer {
+  width: 100%;
+}
+.inner {
+  width: 1400px;
+  margin: auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#header {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+#header .inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+#header p {
+  position: absolute;
+  left: 0;
+  top: 55px;
+}
+#header p i {
+  font-size: 36px;
+  color: #fff;
+}
+
+/* nav */
+#header .nav {
+  position: absolute;
+  top: 45px;
+  right: 250px;
+}
+#header .nav .gnb {
+  display: flex;
+}
+#header .nav .gnb::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header .nav .gnb > li {
+  margin-left: 40px;
+  position: relative;
+}
+#header .nav .gnb li a {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
+  position: relative;
+  color: #fff;
+}
+#header .nav .gnb > li > a {
+  display: block;
+}
+
+/* gnb hover */
+
+#header .nav .gnb > li .sub_gnb {
+  display: none;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+#header .nav .gnb > li:hover .sub_gnb {
+  display: block;
+  transition: 0.5s;
+}
+
+#header .nav .gnb > li .sub_gnb li {
+  padding-bottom: 10px;
+}
+
+#header .nav .gnb li a {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
+  position: relative;
+  color: #fff;
+}
+
+/* footer */
+#footer {
+  width: 100%;
+  background: #070707;
+  color: #fff;
+  font-size: 14px;
+  margin: auto;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#footer .left {
+  background: #131313;
+  padding: 0 180px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer .left .inner {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#footer .left .info1 .info1Title {
+  display: flex;
+  border-bottom: #fff 1px solid;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .left .info1 .info1Desc {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer .left .info1 .info1Desc a {
+  color: #fff;
+  border-bottom: #fff 1px solid;
+  margin: 5px;
+  word-wrap: none;
+}
+
+#footer .left .info1 li {
+  width: 390px;
+  padding: 18px 0;
+  vertical-align: middle;
+}
+
+#footer .left .title {
+  font-size: 20px;
+  border-bottom: #fff 1px solid;
+}
+
+#footer .left .info2 li {
+  width: 360px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#footer .left .info2 .info2Title {
+  display: flex;
+  border-bottom: #fff 1px solid;
+  font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer .left .info2 .info2Desc {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .left .info2 .info2Desc a {
+  color: #fff;
+  border-bottom: #fff 1px solid;
+  margin: 5px;
+  word-wrap: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer .left .info2 .info2Desc p {
+  font-size: 12px;
+  margin: 10px;
+}
+#footer .left .bottom {
+  width: 100%;
+}
+#footer .left .bottom span {
+  display: flex;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+#footer .left .follow {
+  border-bottom: 1px solid #fff;
+}
+#footer .left .bottom span p {
+  padding-right: 20px;
+}
+
+#footer .left .bottom span a {
+  margin: 5px;
+}
+
+#footer .left .bottom span a i {
+  font-size: 40px;
+  color: #fff;
+}
+
+#footer .copy {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  margin-top: 20px;
+  border-bottom: none;
+}
+
+#footer .right {
+  margin: 200px 200px 200px 0px;
+  width: 360px;
+  height: 500px;
+  font-size: 20px;
+  position: relative;
+}
+
+#footer .right p {
+  border-bottom: #fff 1px solid;
+  padding: 10px;
+}
+
+#footer .right div > p + p {
+  margin: 25px 10;
+  font-size: 14px;
+}
+
+#footer .right .bonvoy {
+  border-right: #a45d09 1px solid;
+  padding: 0 40px;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+}
+
+#footer .right .bonvoy i {
+  line-height: 70px;
+}
+
+#footer .right .bonvoy::after {
+  content: "";
+  width: 549px;
+  height: 1px;
+  background: #a45d09;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10;
+}
+
+#footer .left .info1 .info1Desc,
+#footer .left .info2 .info2Desc {
+  display: none;
+}
+
+#footer .left .info1 .info1Desc.on,
+#footer .left .info2 .info2Desc.on {
+  display: block;
+}
+
+/* ------------------------------------------------------------------sub1 */
+.sub1 {
+  overflow-x: hidden;
+}
+.sub1 .con1_visual {
+  background-image: url(../images/sub1/sub1_con1.png);
+  background-repeat: no-repeat;
+  background-position: 0px 200px;
+  background-size: contain;
+  color: #fff;
+}
+.sub1 .con1_visual .header {
+  height: 200px;
+  background: #000;
+}
+.sub1 .con1_visual .txt {
+  height: 1344px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 48%;
+}
+.sub1 .con1_visual .txt .bg {
+  font-size: 230px;
+  font-weight: 700;
+  opacity: 0.3;
+  text-align: center;
+  padding: 300px 0 0 0;
+  line-height: 1.3;
+  transition: 0.1s;
+  animation: floatUp 1s ease forwards;
+}
+@keyframes floatUp {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+}
+.sub1 .con1_visual .txt h2 {
+  font-size: 60px;
+  position: absolute;
+  top: 690px;
+  left: 120px;
+}
+.sub1 .con1_visual .txt p {
+  font-size: 16px;
+  text-align: right;
+  padding: 0 100px;
+}
+.sub1 .con1_visual .txt p + p {
+  font-size: 14px;
+  padding: 100px;
+  text-align: left;
+}
+
+.sub1 .con2_roomInfo {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sub1 .con2_roomInfo .imgS {
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 100;
+  transition: 0.1s;
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.sub1 .con2_roomInfo .imgS.animate {
+  animation: imgs 1s ease forwards;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes imgs {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.sub1 .con2_roomInfo .txt {
+  background: #000;
+  width: 684px;
+  height: 450px;
+  padding: 156px;
+}
+.sub1 .con2_roomInfo .txt h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 139px;
+}
+.sub1 .con2_roomInfo .txt p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  width: 555px;
+  margin-bottom: 300px;
+}
+.sub1 .con2_roomInfo .txt .more {
+  color: #fff;
+  font-size: 20px;
+  padding: 24px 74px;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 300px;
+  top: 900px;
+}
+
+.sub1 .con3_reservation {
+  background-image: url(../images/sub1/sub1_con3.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  color: #fff;
+}
+.sub1 .con3_reservation .txt {
+  width: 800px;
+  height: 1344px;
+  background: rgba(7, 7, 7, 0.8);
+  margin-left: 59%;
+  transition: 0.1s;
+  opacity: 0;
+  transform: translateY(20%);
+}
+
+.sub1 .con3_reservation .txt.animate {
+  animation: txt 1s ease forwards;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes txt {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sub1 .con3_reservation .txt h3 {
+  font-size: 60px;
+  padding: 185px 0;
+  text-align: center;
+}
+.sub1 .con3_reservation .txt p {
+  margin: 50px;
+  padding-bottom: 40px;
+}
+
+.sub1 .con3_reservation .txt p span {
+  margin: 10px;
+  text-align: right;
+  font-size: 20px;
+}
+.sub1 .con3_reservation .txt p .mr40 {
+  margin-right: 40px;
+}
+.sub1 .con3_reservation .txt input {
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 70px;
+  cursor: pointer;
+  font-family: "KoPubWorldBatang";
+  margin-right: 5px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  font-size: 20px;
+  filter: invert(80%);
+}
+
+.sub1 .con3_reservation .txt select {
+  border-bottom: 1px solid #fff;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 70px;
+  cursor: pointer;
+  font-family: "KoPubWorldBatang";
+}
+.sub1 .con3_reservation .txt option {
+  font-size: 16px;
+  background-color: transparent;
+  color: #000;
+  padding: 10px 100px;
+  cursor: pointer;
+  font-family: "KoPubWorldBatang";
+  text-align: left;
+}
+.sub1 .con3_reservation .txt .long {
+  padding: 10px 145px;
+}
+
+.sub1 .con3_reservation .txt .moreR {
+  color: #fff;
+  width: 225px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  margin: auto;
+}
+
+.con4_aotherRoom {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background: #000;
+}
+
+.con4_aotherRoom .txt {
+  width: 700px;
+  height: 350px;
+  background: #1a1a1a;
+  color: #fff;
+  position: absolute;
+  left: 93px;
+  top: 0;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.con4_aotherRoom .txt span {
+  padding-left: 100px;
+  font-size: 16px;
+}
+.con4_aotherRoom .txt h3 {
+  font-size: 60px;
+  text-align: center;
+}
+.con4_aotherRoom .txt p {
+  font-size: 14px;
+  color: #a45d09;
+  padding: 28px;
+  text-align: center;
+  margin-top: 40px;
+}
+.con4_aotherRoom .txt p::after {
+  content: "";
+  background: #a45d09;
+  width: 680px;
+  height: 1px;
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  z-index: 10;
+}
+
+.con4_aotherRoom .img {
+  width: 98%;
+  height: 1400px;
+  overflow-x: hidden;
+  background: #000;
+  padding: 25px 10px;
+  overflow-y: scroll;
+}
+
+.con4_aotherRoom .img::-webkit-scrollbar {
+  width: 10px;
+}
+.con4_aotherRoom .img::-webkit-scrollbar-track {
+  background-color: #131313;
+}
+.con4_aotherRoom .img::-webkit-scrollbar-thumb {
+  background-color: #a45d09;
+}
+.con4_aotherRoom .img::-webkit-scrollbar-button {
+  display: none;
+}
+
+.con4_aotherRoom .img::-webkit-scrollbar-track,
+.con4_aotherRoom .img::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+}
+.img {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.masonry-container {
+  column-count: 4;
+  column-gap: 15px;
+}
+.masonry-item {
+  background-color: #000;
+  margin-bottom: 15px;
+  break-inside: avoid;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.masonry-item img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1200px) {
+  .masonry-container {
+    column-count: 3;
+  }
+}
+@media screen and (max-width: 800px) {
+  .masonry-container {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 500px) {
+  .masonry-container {
+    column-count: 1;
+  }
+}
+
+/* hover */
+.sub1 .con2_roomInfo .txt .more:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.sub1 .con3_reservation .txt .moreR:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.3s;
+}
